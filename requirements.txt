@@ -1,1 +1,5 @@
-Nota técnica: O openpyxl é necessário porque o Pandas o utiliza "por baixo dos panos" para ler arquivos .xlsx. Sem ele, seu app daria erro ao tentar abrir a planilha no servidor.
+streamlit
+pandas
+plotly
+openpyxl
+numpy
