@@ -4,6 +4,15 @@ import plotly.graph_objects as go
 import numpy as np
 import plotly.express as px
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(page_title="Fisio Performance", layout="wide")
 
