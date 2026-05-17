@@ -4,6 +4,12 @@ import plotly.graph_objects as go
 import numpy as np
 import plotly.express as px
 
+st.set_page_config(
+    page_title="Fisio Performance", 
+    page_icon="⚽", 
+    layout="wide"
+)
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -16,7 +22,6 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # --- CONFIGURAÇÃO DA PÁGINA ---
-st.set_page_config(page_title="Fisio Performance", layout="wide")
 
 # --- FUNÇÃO PARA CARREGAR E TRATAR DADOS ---
 @st.cache_data
