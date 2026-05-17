@@ -8,7 +8,9 @@ hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            header {visibility: hidden;}
+            /* Esconde apenas o botão do GitHub e decorações, sem sumir com a barra lateral */
+            .stAppHeader {visibility: hidden;}
+            .st-emotion-cache-16ids9p {padding-top: 0rem;}
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
