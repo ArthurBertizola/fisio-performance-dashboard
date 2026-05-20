@@ -12,11 +12,20 @@ st.set_page_config(
 
 hide_st_style = """
             <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            /* Esconde apenas o botão do GitHub e decorações, sem sumir com a barra lateral */
-            .stAppHeader {visibility: hidden;}
-            .st-emotion-cache-16ids9p {padding-top: 0rem;}
+            /* Esconde o menu de opções (três pontinhos) */
+            button[data-testid="stHeaderDeveloperTools"] {
+                display: none !important;
+            }
+            
+            /* Esconde o link/ícone do GitHub */
+            header a {
+                display: none !important;
+            }
+            
+            /* Garante que o fundo do header fique transparente para não cobrir nada */
+            header {
+                background-color: transparent !important;
+            }
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
